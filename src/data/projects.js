@@ -2,7 +2,7 @@ export const projects = [
    {
       id: "revofun",
       title: "RevoFun — Web Mini Games",
-      image: "src/assets/revofun.png",
+      image: "/assets/revofun.png",
       link: "https://github.com/Revou-FSSE-Jun25/milestone-2-Cel44.git",
       shortDescription: "A small collection of browser games including Memory Cards, Rock-Paper-Scissors, and Number Guessing.",
       overview: "RevoFun is a collection of small web games I developed during the milestone project, containing Memory Cards, Rock-Paper-Scissors, and Number Guessing. I engineered the core game logic using Vanilla JavaScript and the DOM API, implementing randomized events and real-time state updates. I also designed a fully responsive mobile-first interface using CSS transitions and Flexbox, ensuring a smooth user experience across devices without external frameworks.",
@@ -53,17 +53,17 @@ export const projects = [
     
       screenshots: [
         {
-          src: "src/assets/memory.png",
+          src: "/assets/memory.png",
           alt: "Memory Cards",
         },
     
         {
-          src: "src/assets/RPS.png",
+          src: "/assets/RPS.png",
           alt: "Rock Paper Scissors",
         },
     
         {
-          src: "src/assets/guess.png",
+          src: "/assets/guess.png",
           alt: "Number Guessing",
         },
       ],
@@ -72,7 +72,7 @@ export const projects = [
    {
       id: "catalog",
       title: "Catalog",
-      image: "src/assets/catalog.png",
+      image: "/assets/catalog.png",
       link: "https://github.com/Cel44/Catalog.git",
       shortDescription:"A simple product catalog application built with React. Uses dummy data.",
       overview: "This catalog website is made simply as an assignment to practice React. It uses dummy data and has no backend connection. The main purpose of this project is to demonstrate my ability to build a React application with reusable components, manage filtering, and create a responsive UI using Tailwind CSS. The catalog displays a list of products with names, prices, and categories allowing users to browse items easily.",
@@ -108,17 +108,17 @@ export const projects = [
   
       screenshots: [
         {
-          src: "src/assets/catalog.png",
+          src: "/assets/catalog.png",
           alt: "Homepage",
         },
   
         {
-          src: "src/assets/categories.png",
+          src: "/assets/categories.png",
           alt: "Categories Filtering",
         },
   
         {
-          src: "src/assets/categories_2.png",
+          src: "/assets/categories_2.png",
           alt: "After Filtering",
         },
       ],
@@ -127,7 +127,7 @@ export const projects = [
    {
       id: "revoushop",
       title: "RevouShop — E-commerce Platform",
-      image: "src/assets/revoushop.png",
+      image: "/assets/revoushop.png",
       link: "https://github.com/Cel44/milestone-3-Cel44.git",
       shortDescription: "A marketplace website featuring product listings, cart functionality, and an admin dashboard.",
       overview: "RevouShop is a fully functional e-commerce platform built with a focus on user experience and performance. I developed the frontend architecture using React Context API for real-time cart state management and Tailwind CSS for a mobile-responsive interface. I also implemented an admin panel with CRUD capabilities and optimized the application using Server-Side Rendering (SSR). To improve reliability, I wrote automated unit tests with Jest covering login, cart logic, and admin interactions.",
@@ -183,12 +183,12 @@ export const projects = [
       
       screenshots: [
          {
-            src: "src/assets/prod list.png",
+            src: "/assets/prod list.png",
             alt: "User Home Page",
          },
       
          {
-            src: "src/assets/admin.png",
+            src: "/assets/admin.png",
             alt: "Admin Panel",
          },
       ],
