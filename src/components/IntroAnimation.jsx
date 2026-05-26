@@ -13,13 +13,14 @@ export default function IntroAnimation({onFinish}) {
    const [visible, setVisible] = useState(true);
 
    useEffect(() => {
-      if(index < greetings.length-1){
-         const id = setInterval(() => setIndex((i) => i+1) , 200);
-         return () => clearInterval(id);
-      } else {
-         const t = setTimeout(() => setVisible(false), 300);
-         return () => clearTimeout(t);
+      if(index < greetings.length - 1){
+         const id = setTimeout(() => {setIndex((i) => i+1)}, 200);
+         return () => clearTimeout(id);
       }
+
+         const timer = setTimeout(() => {setVisible(false)}, 300);
+         return () => clearTimeout(timer);
+      
    }, [index, greetings.length]);
 
    return (
@@ -31,7 +32,7 @@ export default function IntroAnimation({onFinish}) {
             exit={{
                y:"-100%",
                transition: {
-                  duration: 0.2,
+                  duration: 0.5,
                   ease: [0.22, 1, 0.36, 1]
                }
             }}
@@ -41,7 +42,7 @@ export default function IntroAnimation({onFinish}) {
                initial={{opacity: 0, y:20}}
                animate={{opacity: 1, y:0}}
                exit={{opacity:0, y:-20}}
-               transition={{duration:0.12}}
+               transition={{duration:0.5}}
 
                >
                   {greetings[index]}

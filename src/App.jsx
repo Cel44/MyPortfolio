@@ -9,6 +9,7 @@ import CustomCursor from './components/CustomCursor';
 import IntroAnimation from './components/IntroAnimation';
 import Education from './sections/Education';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 
 export default function App () {
@@ -16,10 +17,14 @@ export default function App () {
 
    return (
       <>
-      {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
 
       {introDone && (
-      <div className='relative gradient text-white'>
+      <motion.div className='relative gradient text-white'
+      initial={{ opacity: 0, y: 20, scale: 0.98 }}
+      animate={{opacity: introDone ? 1 : 0, y: introDone ? 0 : 20, scale: introDone ? 1 : 0.98 }}
+      transition={{duration: 0.7, ease: [0.22, 1, 0.36, 1]}}
+      >
+
          <CustomCursor />
          <Navbar />
          <Home />
@@ -29,8 +34,10 @@ export default function App () {
          <Projects />
          <Contact />
          <Footer />
-      </div>
+      </motion.div>
       )}
+
+      {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
    </>
    )
 }
