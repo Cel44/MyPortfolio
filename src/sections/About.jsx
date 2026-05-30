@@ -60,7 +60,7 @@ export default function About() {
                   </p>
 
                   <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  I am a fullstack software engineering graduate with hands-on experience building end-to-end web applications.
                   </p>
 
                   <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl">
@@ -96,7 +96,7 @@ export default function About() {
                </h3>
 
                <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Through the REVOU Full-Stack Software Engineering Program, I developed frontend solutions using React, Next.js, and styling using Tailwind CSS, and built backend systems with NestJS, PostgreSQL, and Prisma. I am passionate about building user-friendly and responsive web applications, and I am constantly learning and improving my skills.
                </p>
             </motion.div>
          </div>

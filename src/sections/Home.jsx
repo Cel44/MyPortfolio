@@ -104,12 +104,12 @@ export default function Home() {
                   </motion.h1>
                   
                   <motion.p 
-                  className="mt-6 text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0"
+                  className="mt-6 text-sm md:text-lg lg:text-xl font-semibold text-gray-300 max-w-2xl mx-auto lg:mx-0"
                   initial={{opacity: 0, y:20}}
                   animate={{opacity: 1, y:0}}
                   transition={{duration: 0.8, delay: 0.4}}
                   >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Developing Websites and Applications One Line of Code at a Time
                   </motion.p>
 
                   <motion.div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6 "
