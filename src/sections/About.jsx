@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import my_pic from "../assets/my_pic.jpg";
+import Particlesbackground from "../components/ParticlesBackground";
 
 export default function About() {
 
@@ -18,7 +19,8 @@ export default function About() {
       <section id="about"
       className="w-full min-h-screen flex items-center justify-center relative bg-black text-white overflow-hidden"
       >
-         <div className="absolute inset-0 pointer-events-none"
+         <Particlesbackground />
+         {/* <div className="absolute inset-0 pointer-events-none"
          >
             {glows.map((c, i) => (
                <div
@@ -26,7 +28,7 @@ export default function About() {
                className={`absolute rounded-full bg-linear-to-r from-[#1E5F8A] via-[#9587ff] to-[#B06CFF] animate-pulse ${c}`}
                />
             ))}
-         </div>
+         </div> */}
 
          <div
          className="relative z-10 max-w-6xl w-full mx-auto px-6 md:px-10 lg:px-12 py-20 flex flex-col gap-12"
