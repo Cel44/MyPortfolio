@@ -18,12 +18,12 @@ export default function App () {
    return (
       <>
 
-      {introDone && (
+      {/* {introDone && (
       <motion.div className='relative gradient text-white'
       initial={{ opacity: 0, y: 20, scale: 0.98 }}
       animate={{opacity: introDone ? 1 : 0, y: introDone ? 0 : 20, scale: introDone ? 1 : 0.98 }}
       transition={{duration: 0.7, ease: [0.22, 1, 0.36, 1]}}
-      >
+      > */}
 
          <CustomCursor />
          <Navbar />
@@ -34,10 +34,10 @@ export default function App () {
          <Projects />
          <Contact />
          <Footer />
-      </motion.div>
-      )}
+      {/* </motion.div> */}
+      {/* )} */}
 
-      {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
+      {/* {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />} */}
    </>
    )
 }
